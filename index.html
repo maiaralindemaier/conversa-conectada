@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversa Conectada</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #1a0000, #000000);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    padding: 35px;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(255,0,0,0.4);
+    max-width: 420px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);} 
+    to { opacity: 1; transform: translateY(0);} 
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #ff3b3b;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+  }
+
+  .highlight {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #ff3b3b, #ff0000);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 15px rgba(255,0,0,0.6);
+  }
+
+  .secondary {
+    background: #2a2a2a;
+  }
+
+  .secondary:hover {
+    background: #444;
+  }
+
+  .urgent {
+    background: linear-gradient(90deg, #ff0000, #990000);
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.7);} 
+    70% { box-shadow: 0 0 0 15px rgba(255,0,0,0);} 
+    100% { box-shadow: 0 0 0 0 rgba(255,0,0,0);} 
+  }
+
+  .footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Conversa Conectada</h1>
+  <div class="subtitle">Um clique pode mudar tudo</div>
+
+  <div class="highlight">Sofrendo cyberbullying? Você não está sozinho.</div>
+
+  <a class="btn urgent" href="https://www.safernet.org.br" target="_blank">
+    <i class="fas fa-life-ring"></i> Preciso de ajuda agora
+  </a>
+
+  <a class="btn" href="https://www.gov.br/mdh/pt-br/ondh/disque100" target="_blank">
+    <i class="fas fa-phone"></i> Disque 100
+  </a>
+
+  <a class="btn" href="https://www.mpf.mp.br" target="_blank">
+    <i class="fas fa-balance-scale"></i> Ministério Público
+  </a>
+
+  <a class="btn secondary" href="https://help.instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i> Denunciar no Instagram
+  </a>
+
+  <a class="btn secondary" href="https://faq.whatsapp.com" target="_blank">
+    <i class="fab fa-whatsapp"></i> Denunciar no WhatsApp
+  </a>
+
+  <a class="btn secondary" href="https://support.tiktok.com" target="_blank">
+    <i class="fab fa-tiktok"></i> Denunciar no TikTok
+  </a>
+
+  <div class="footer">
+    Cyberbullying machuca.Silenciar dói mais ainda.
+  </div>
+</div>
+
+</body>
+</html>
